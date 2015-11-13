@@ -1,9 +1,3 @@
-### Image from Docker Registry
-
-1. Run image
-
-        docker run -h `hostname` --name zoom -d -e DISPLAY=$DISPLAY --device /dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix -v /run/user/`id -u`/pulse:/run/pulse dmitrysandalov/docker-zoom
-
 ### Self-made Docker image
 
 1. Build image from this repo
