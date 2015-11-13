@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo chown developer:developer /dev/video0
+PULSE_SERVER=/run/pulse/native /usr/bin/zoom
