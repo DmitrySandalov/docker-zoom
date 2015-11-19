@@ -8,7 +8,7 @@
 
 2. Start Zoom:
 
-        docker run -h `hostname` --name zoom -d -e DISPLAY=$DISPLAY --device /dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix -v /run/user/`id -u`/pulse:/run/pulse zoom
+        docker run --net=host --name zoom -d -e DISPLAY=$DISPLAY --device /dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix -v /run/user/`id -u`/pulse:/run/pulse zoom
 
 ### Notes
 
