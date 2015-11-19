@@ -35,6 +35,7 @@ RUN rm -rf /var/lib/apt/lists/*
 RUN export uid=1000 gid=1000 && \
     mkdir -p /home/developer && \
     mkdir -p /home/developer/.config && \
+    mkdir -p /home/developer/.zoom && \
     echo "developer:x:${uid}:${gid}:Developer,,,:/home/developer:/bin/bash" >> /etc/passwd && \
     echo "developer:x:${uid}:" >> /etc/group && \
     echo "developer ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/developer && \
