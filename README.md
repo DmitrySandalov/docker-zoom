@@ -10,6 +10,10 @@
 
         docker run --net=host --name zoom -d -e DISPLAY=$DISPLAY --device /dev/video0:/dev/video0 -v /tmp/.X11-unix:/tmp/.X11-unix -v /run/user/`id -u`/pulse:/run/pulse zoom
 
+3. Stop Zoom:
+
+        docker stop zoom; docker rm -v zoom
+
 ### Notes
 
 * Note 1. To set up a proxy server, modify the file `conf/zoomus.conf` and rebuild the image
