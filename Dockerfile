@@ -17,7 +17,7 @@ RUN apt-get -y install \
     libxext6 libxfixes3 libxi6 libxml2 libxrender1 libxshmfence1 libxslt1.1 \
     libxxf86vm1 sgml-base x11-common xml-core curl desktop-file-utils
 
-RUN curl -L https://zoom.us/client/latest/zoom_1.1.38634.0127_amd64.deb > /tmp/zoom.deb
+RUN curl -L https://zoom.us/client/latest/zoom_1.1.44485.0317_amd64.deb > /tmp/zoom.deb
 RUN dpkg -i /tmp/zoom.deb && rm /tmp/zoom.deb
 RUN rm -rf /var/lib/apt/lists/*
 
